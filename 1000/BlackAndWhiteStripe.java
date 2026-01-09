@@ -18,8 +18,8 @@ public class BlackAndWhiteStripe {
                 if(c[i]=='B') b++;
                 else w++;
                 res=Math.min(res,w);
-                if(c[i-k+1]=='B') b++;
-                else w++;
+                if(c[i-k+1]=='B') b--;
+                else w--;
             }
             System.out.println(res);
         }
